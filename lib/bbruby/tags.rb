@@ -28,6 +28,13 @@ module BBRuby
           "Google place",
           "[gplace]Seattle WA[/gplace]",
           :gplace
+      ],
+      "Paragraph" => [
+          /\[p(:.*)?\](.*?)\[\/p\1?\]/mi,
+          '<p>\2</p>',
+          "Paragraph",
+          "[p]Text[/p]",
+          :p
       ]
   )
 end
